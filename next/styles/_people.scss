@@ -1,0 +1,25 @@
+.people-container {
+  @include flexCenter(column);
+  justify-content: flex-start;
+  min-height: 100vh;
+  width: 100%;
+
+  .people {
+    padding-top: 24px;
+    width: 100%;
+    @include flexCenter(column);
+
+    .title {
+      font-weight: 600;
+      padding-bottom: 72px;
+      font-size: 2.4rem;
+      line-height: 2.2rem;
+    }
+
+    .role {
+      @include flexCenter(row);
+      flex-wrap: wrap;
+      width: 100%;
+    }
+  }
+}

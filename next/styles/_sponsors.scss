@@ -1,0 +1,29 @@
+.sponsors-container {
+  width: 100%;
+  @include flexCenter(column);
+  margin-bottom: 72px;
+
+  .subtitle {
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    font-size: 1.4em;
+    font-weight: 600;
+    margin-bottom: 24px;
+  }
+
+  .sponsors {
+    width: 1200px;
+    @media only screen and (max-width: 1200px) {
+      width: 90%;
+    }
+    @include flexCenter(row);
+    flex-wrap: wrap;
+    .sponsor {
+      margin: 20px;
+      .image {
+        height: 64px;
+        object-fit: contain;
+      }
+    }
+  }
+}

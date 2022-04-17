@@ -1,0 +1,57 @@
+.events-container {
+  width: 100%;
+  height: fit-content;
+
+  @include flexCenter(column);
+
+  .events {
+    width: 800px;
+    @media only screen and (max-width: 800px) {
+      width: 90%;
+    }
+    padding-top: 72px;
+
+    .event {
+      @include flexCenter(row);
+      flex-wrap: wrap;
+      justify-content: space-between;
+      @media only screen and (max-width: 800px) {
+        justify-content: flex-start;
+      }
+      align-items: flex-start;
+      width: 100%;
+      padding-bottom: 96px;
+
+      .title {
+        font-weight: 700;
+        font-size: 2.2em;
+        color: $red;
+        padding-bottom: 1rem;
+        @media only screen and (max-width: 600px) {
+          font-size: 1.8em;
+        }
+        padding-left: 8px;
+        padding-right: 8px;
+      }
+
+      .body {
+        font-weight: 400;
+        font-size: 1.1em;
+
+        width: 400px;
+        text-align: justify;
+        min-width: 300px;
+      }
+    }
+
+    .reverse {
+      @include flexCenter(row-reverse);
+      flex-wrap: wrap;
+      justify-content: space-around;
+      @media only screen and (max-width: 800px) {
+        justify-content: flex-start;
+      }
+      align-items: flex-start;
+    }
+  }
+}

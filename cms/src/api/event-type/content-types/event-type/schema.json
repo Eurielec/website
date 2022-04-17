@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "event_types",
+  "info": {
+    "singularName": "event-type",
+    "pluralName": "event-types",
+    "displayName": "EventType",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "richtext",
+      "required": true
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "Workshop",
+        "Exchange",
+        "Congress",
+        "Motivational Day",
+        "IMW",
+        "SSA",
+        "Talk"
+      ],
+      "default": "Workshop",
+      "required": true
+    },
+    "show": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,38 @@
+.navbar-container {
+  @include flexCenter(row);
+  width: 100%;
+  justify-content: space-between;
+  margin: clamp(20px, 40px, 100px);
+  padding: clamp(10px, 32px, 40px);
+  padding-left: clamp(10px, 72px, 100px);
+  padding-right: clamp(10px, 72px, 100px);
+
+  @media only screen and (max-width: 700px) {
+    margin: 0;
+    padding: 20px;
+    padding-top: 32px;
+  }
+
+  overflow: hidden;
+
+  .logo {
+    font-weight: 800;
+    font-size: 1.8em;
+
+    @media only screen and (max-width: 600px) {
+      font-size: 1.4em;
+    }
+  }
+  a {
+    font-size: 1.2em;
+    color: $black;
+    text-decoration: none;
+    text-align: left;
+  }
+  .right-menu {
+    @include flexCenter(row);
+    align-items: flex-end;
+    transform: translateY(2px);
+    width: clamp(400px, 30%, 600px);
+  }
+}

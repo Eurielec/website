@@ -1,0 +1,105 @@
+.past-events-container {
+  width: 100%;
+  // min-width: 100vh;
+  @include flexCenter(column);
+
+  .past-events {
+    @include flexCenter(column);
+    width: 800px;
+    @media only screen and (max-width: 800px) {
+      width: 90%;
+    }
+    padding-top: 72px;
+
+    .event {
+      @include flexCenter(row);
+      @media only screen and (max-width: 800px) {
+        @include flexCenter(column);
+      }
+      align-items: flex-start;
+      background-color: white;
+
+      // Size
+      height: clamp(200px, 300px, 600px);
+      @media only screen and (max-width: 800px) {
+        height: fit-content;
+      }
+      width: clamp(300px, 800px, 800px);
+      @media only screen and (max-width: 800px) {
+        width: 90%;
+      }
+      border-radius: 25px;
+      margin: 20px;
+      padding-left: 12px;
+      padding-right: 12px;
+
+      // Shadow
+      box-shadow: 5px 6px 22px -9px rgba(0, 0, 0, 0.61);
+
+      // Transition
+      transition: transform 0.4s;
+
+      // Zoom on hover
+      &:hover {
+        transform: scale(1.2);
+      }
+      .image-container {
+        flex: 3;
+        height: 100%;
+        @include flexCenter(column);
+        padding-right: 12px;
+        padding-left: 12px;
+        .image {
+          object-fit: cover;
+          overflow: hidden;
+          border-radius: 25px;
+          @media only screen and (max-width: 800px) {
+            width: 128px;
+            height: 128px;
+            margin-top: 24px;
+          }
+        }
+      }
+
+      .event-info {
+        flex: 8;
+        padding: 24px;
+        .title {
+          font-size: 1.8em;
+          font-weight: 600;
+          // padding-bottom: 12px;
+          margin-bottom: 0px;
+        }
+
+        .subtitle {
+          font-size: 0.9em;
+          font-weight: 200;
+          padding-bottom: 12px;
+        }
+
+        .description {
+          display: -webkit-box;
+          // max-width: 200px;
+          -webkit-line-clamp: 6;
+          text-align: justify;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+        }
+
+        .other-info {
+          @include flexCenter(row);
+          justify-content: space-between;
+          width: 100%;
+          margin-top: 12px;
+          .dates {
+            font-style: italic;
+          }
+
+          .location {
+            font-style: italic;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,39 @@
+.person {
+  margin: 1rem;
+  width: 16rem;
+  @include flexCenter(column);
+
+  .charge {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    justify-content: center;
+    font-weight: 100;
+  }
+
+  .name {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    justify-content: center;
+  }
+
+  .image-container {
+    background-color: $black;
+    background-clip: border-box;
+    border-radius: 9999px;
+    border-width: 4px;
+    border-color: $white;
+    overflow: hidden;
+    margin-bottom: 0.5rem;
+    display: flex;
+    height: 11rem;
+    width: 11rem;
+    .image {
+      height: 11rem;
+      width: 11rem;
+    }
+  }
+
+  .red {
+    border-color: $red;
+  }
+}

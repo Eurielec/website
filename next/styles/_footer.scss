@@ -1,0 +1,12 @@
+.footer-container {
+  width: 100%;
+
+  .content {
+    width: 100%;
+    background-color: $red;
+    color: $white;
+    @include flexCenter(row);
+    padding-bottom: 32px;
+    font-size: large;
+  }
+}

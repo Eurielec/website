@@ -1,0 +1,31 @@
+.wave-container {
+  width: 100%;
+
+  .upper-wave {
+    width: 100%;
+    transform: translateY(4px);
+  }
+
+  .lower-wave {
+    width: 100%;
+    transform: translateY(-4px);
+  }
+
+  .child {
+    width: 100%;
+    background-color: $red;
+    color: $white;
+    @include flexCenter(column);
+    padding: 1rem;
+    @media (min-width: 768px) {
+      .md\:p-8 {
+        padding: 2rem /* 32px */;
+      }
+    }
+    @media (min-width: 640px) {
+      .sm\:p-16 {
+        padding: 4rem /* 64px */;
+      }
+    }
+  }
+}

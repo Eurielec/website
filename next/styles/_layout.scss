@@ -1,0 +1,7 @@
+.layout {
+  width: 100%;
+  @include flexCenter(column);
+  min-height: 100vh;
+  padding: 0px;
+  margin: 0px;
+}
