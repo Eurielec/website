@@ -11,14 +11,14 @@
   },
   "devDependencies": {},
   "dependencies": {
-    "@strapi/plugin-graphql": "4.1.5",
+    "@strapi/plugin-graphql": "4.0.0",
     "@strapi/plugin-i18n": "4.1.5",
     "@strapi/plugin-users-permissions": "4.1.5",
     "@strapi/strapi": "4.1.5",
     "pg": "8.6.0"
   },
   "author": {
-    "name": "A Strapi developer"
+    "name": "devve"
   },
   "strapi": {
     "uuid": "fecf6677-2842-436b-8c6b-5a2140b000f4"
