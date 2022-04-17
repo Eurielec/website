@@ -2,6 +2,7 @@ version: "3.3"
 services:
   strapi:
     image: strapi/strapi
+    container_name: website_cms
     environment:
       DATABASE_CLIENT: postgres
       DATABASE_NAME: strapi
@@ -18,6 +19,7 @@ services:
 
   postgres:
     image: postgres
+    container_name: website_cms_db
     environment:
       POSTGRES_DB: strapi
       POSTGRES_USER: $STRAPI_DB_USER
