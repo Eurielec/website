@@ -1,7 +1,7 @@
 function Footer() {
   return (
     <div className="footer-container">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" className="upper-wave">
             <path
               fill="#E52A30"
               fill-opacity="1"

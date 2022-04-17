@@ -1,6 +1,11 @@
 .footer-container {
   width: 100%;
 
+  .upper-wave {
+    width: 100%;
+    transform: translateY(4px);
+  }
+
   .content {
     width: 100%;
     background-color: $red;
