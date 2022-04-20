@@ -58,6 +58,9 @@
         padding-right: 12px;
         padding-left: 12px;
         padding-top: 24px;
+        @media only screen and (max-width: 800px) {
+          max-height: none;
+        }
         .image {
           object-fit: cover;
           overflow: hidden;
