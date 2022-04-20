@@ -30,13 +30,14 @@ export default function Events() {
 
 
   return (
-    <div className="events-container">
+    <div>
       <Head>
         <title>Eurielec | Eventos</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <Layout>
+        <div className="events-container">
           <div className="events">
               {
                 data ? ([...data?.eventTypes?.data])
@@ -55,6 +56,7 @@ export default function Events() {
                 })
                 : null
               }
+          </div>
           </div>
           <Footer />
       </Layout>

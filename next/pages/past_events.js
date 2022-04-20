@@ -81,7 +81,7 @@ export default function Events() {
                           {event.attributes.name}
                         </div>
                         <div className="subtitle">
-                          {event.attributes.event_type.data.attributes.type}
+                          {event.attributes.event_type?.data?.attributes?.type}
                         </div>
                         <p className="description">
                           {event.attributes.description}

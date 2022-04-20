@@ -25,6 +25,7 @@
       }
 
       .row {
+        width: 100%;
         @include flexCenter(row);
         @media only screen and (max-width: 800px) {
           @include flexCenter(column);
@@ -39,6 +40,7 @@
           overflow: hidden;
           border-radius: 25px;
           margin-right: 12px;
+          width: inherit;
           @media only screen and (max-width: 800px) {
             height: 128px;
             width: 128px;

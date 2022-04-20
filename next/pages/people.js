@@ -35,6 +35,10 @@ export default function People() {
     console.log("Loading");
   }
 
+  if (error) {
+    console.log(error);
+  }
+
   console.log(data?.people?.data);
 
   return (

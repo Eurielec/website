@@ -48,8 +48,8 @@ function Sponsors(props) {
               }
             }
               )
-            .map(sponsor => (
-                <div className="sponsor">
+            .map((sponsor, index) => (
+                <div className="sponsor" key={index}>
                     <a href={sponsor?.attributes?.url}>
                         <img 
                         src={`${NEXT_PUBLIC_STRAPI_URL}${sponsor?.attributes?.logo?.data?.attributes?.url}`}
