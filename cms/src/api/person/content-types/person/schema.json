@@ -23,7 +23,7 @@
     "team": {
       "type": "enumeration",
       "enum": [
-        "directive board",
+        "directive_board",
         "coordinators",
         "staff",
         "member"

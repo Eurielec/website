@@ -56,7 +56,7 @@ export default function Events() {
 
 
   return (
-    <div className="events">
+    <>
       <Head>
         <title>Eurielec | Últimos</title>
         <link rel="icon" href="/favicon.ico" />
@@ -105,6 +105,6 @@ export default function Events() {
           <Footer />
         </div>
       </Layout>
-    </div>
+    </>
   );
 }

@@ -1,5 +1,22 @@
 version: "3.3"
 services:
+  next:
+    build: ./next
+    image: website-frontend
+    container_name: website-frontend
+    restart: unless-stopped
+    ports:
+      - 5004:3000
+    environment:
+      # DONT CHANGE HERE, CHANGE .env FILE INSIDE PROJECT
+      # SINCE process.env is part of node, not the browser,
+      # variables get accessed during build
+      # - NEXT_PUBLIC_STRAPI_URL=<example.org>
+      # - PLACEHOLDER_IMAGE_URL=<example.org>
+      # - STRIPE_SECRET_KEY=<example>
+      # - NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=<example>
+      - TZ=Europe/Madrid
+
   strapi:
     container_name: website-cms
     image: website-cms
@@ -27,7 +44,7 @@ services:
       POSTGRES_DB: strapi
       POSTGRES_USER: $STRAPI_DB_USER
       POSTGRES_PASSWORD: $STRAPI_DB_PASSWORD
-    ports:
-      - "5432:5432"
+    # ports:
+    #   - "5432:5432"
     volumes:
       - $STRAPI_DB_DATA:/var/lib/postgresql/data

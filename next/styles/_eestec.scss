@@ -1,6 +1,8 @@
 .eestec-container {
-  width: 100%;
+  // width: 100%;
   padding: 4rem;
+  padding-left: 128px;
+  padding-right: 128px;
   margin-bottom: 6rem;
   @media only screen and (max-width: 800px) {
     padding: 2rem;
@@ -13,7 +15,7 @@
     max-width: 1400px;
     @include flexCenter(row);
     flex-wrap: wrap;
-    justify-items: center;
+    justify-items: flex-start;
     justify-content: space-around;
     vertical-align: middle;
     align-items: flex-start;
@@ -31,6 +33,7 @@
       }
     }
     .body {
+      margin: 0;
       flex: 6;
       text-align: justify;
       font-weight: 500;

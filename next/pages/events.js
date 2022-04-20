@@ -30,14 +30,13 @@ export default function Events() {
 
 
   return (
-    <div className="events">
+    <div className="events-container">
       <Head>
         <title>Eurielec | Eventos</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <Layout>
-        <div className="events-container">
           <div className="events">
               {
                 data ? ([...data?.eventTypes?.data])
@@ -46,7 +45,7 @@ export default function Events() {
                   return (
                     <div className={index % 2 === 0 ? "event" : "event reverse"} key={event.id}>
                       <div className="title">
-                        {event.attributes.name}
+                        {event.attributes.name.replace("_", " ")}
                       </div>
                         <p className="body">
                           {event.attributes.description}
@@ -58,8 +57,7 @@ export default function Events() {
               }
           </div>
           <Footer />
-        </div>
       </Layout>
-    </div>
+      </div>
   );
 }

@@ -13,5 +13,11 @@
     @include flexCenter(row);
     padding-bottom: 32px;
     font-size: large;
+
+    a {
+      color: $white;
+      text-decoration: none;
+      text-align: left;
+    }
   }
 }

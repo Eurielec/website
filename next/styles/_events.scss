@@ -1,8 +1,9 @@
 .events-container {
+  @include flexCenter(column);
+  justify-content: flex-start;
   width: 100%;
   height: fit-content;
-
-  @include flexCenter(column);
+  min-height: 100vh;
 
   .events {
     width: 800px;
