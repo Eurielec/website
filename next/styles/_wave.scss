@@ -3,12 +3,12 @@
 
   .upper-wave {
     width: 100%;
-    transform: translateY(4px);
+    transform: translateY(6px);
   }
 
   .lower-wave {
     width: 100%;
-    transform: translateY(-4px);
+    transform: translateY(-6px);
   }
 
   .child {
@@ -19,16 +19,12 @@
     padding-top: 1rem;
     padding-bottom: 1rem;
     @media (min-width: 768px) {
-      .md\:p-8 {
-        padding-top: 2rem;
-        padding-bottom: 2rem;
-      }
+      padding-top: 2rem;
+      padding-bottom: 2rem;
     }
     @media (min-width: 640px) {
-      .sm\:p-16 {
-        padding-top: 4rem;
-        padding-bottom: 4rem;
-      }
+      padding-top: 4rem;
+      padding-bottom: 4rem;
     }
   }
 }
